@@ -12,4 +12,29 @@ public class Toy {
         this.count = count;
         this.percent = percent;
     }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Integer getCount() {
+        return count;
+    }
+
+    public double getPercent() {
+        return percent;
+    }
+
+    public void changePer(double per){
+        this.percent = per;
+    }
+      
+    @Override
+    public String toString() {
+        return "[id= " + id + ", Название= " + name + ", Осталось= " + count + ", Вероятность= " + percent + "]";
+    }
 }
