@@ -1,4 +1,4 @@
-package attestation_work_java;
+package attestation_work_java.model;
 
 public class Toy {
     public Integer id;
@@ -31,6 +31,12 @@ public class Toy {
 
     public void changePer(double per){
         this.percent = per;
+    }
+
+    public void changeCount() {
+        if (this.count != 0) {
+            this.count = this.count - 1;
+        }
     }
       
     @Override

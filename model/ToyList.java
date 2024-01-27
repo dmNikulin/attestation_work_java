@@ -1,12 +1,11 @@
-package attestation_work_java.functions;
+package attestation_work_java.model;
 
 import java.util.ArrayList;
-
-import attestation_work_java.Toy;
+import java.util.List;
 
 public class ToyList {
 
-    public ArrayList<Toy> toyList = new ArrayList<>();
+    public List<Toy> toyList = new ArrayList<>();
 
     public void addToy(Toy toy){
         this.toyList.add(toy);
@@ -25,4 +24,13 @@ public class ToyList {
             }
         }
     }
+
+    public Integer size() {
+        return toyList.size();
+    }
+
+    public List<Toy> getToyList(){
+        return toyList;
+    }
+
 }
